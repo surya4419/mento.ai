@@ -12,7 +12,9 @@ const allowedOrigins = [
   'http://127.0.0.1:8080',  // Alternative localhost
   'http://192.168.43.252:8080',  // Local network access
   // Production origins - update these with your actual Render URLs
-  'https://zeo-p8vd.onrender.com'  // Render frontend URL
+ 
+  'https://mento-ai-backend-q75s.onrender.com'
+   // Render frontend URL
     // Your custom domain
 ];
 
