@@ -58,10 +58,34 @@ export default function Session() {
     initConversation();
   }, [conversationUrl, createConversation, navigate]);
 
-  const handleEndSession = () => {
+  const handleEndSession = async () => {
     // Clear any errors before navigating
     clearError();
     setError(null);
+    try {
+      // Extract conversation_id from the conversationUrl (e.g., https://tavus.daily.co/c123456)
+      let conversationId = null;
+      if (conversationUrl) {
+        // Try to extract the last path segment as the conversation_id
+        const match = conversationUrl.match(/([a-zA-Z0-9]+)$/);
+        if (match) {
+          conversationId = match[1];
+        }
+      }
+      if (conversationId) {
+        // Call Tavus API to end the conversation
+        await fetch(`https://tavusapi.com/v2/conversations/${conversationId}/end`, {
+          method: 'POST',
+          headers: {
+            'x-api-key': import.meta.env.VITE_TAVUS_API_KEY,
+            'Content-Type': 'application/json',
+          },
+        });
+      }
+    } catch (err) {
+      // Optionally log or show error, but still navigate home
+      console.error('Failed to end session on backend:', err);
+    }
     navigate('/');
   };
 
