@@ -188,7 +188,6 @@ We welcome contributions! Please open issues, submit pull requests, or join our 
 ## 👥 Team: KANYARASHI
 
 - **Surya Ganesh Yadala** (Full Stack Developer)
-- **Sandeep Mopuri** (Backend Developer)
 - **Dharma Teja Pola** (Product Builder & AI Developer)
 
 *Winners @ World's Largest AI Hackathon - Raise Your Hack*
