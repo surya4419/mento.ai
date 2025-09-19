@@ -240,7 +240,7 @@ export default function Dashboard() {
                     <BookOpen className="w-5 h-5 text-blue-500" />
                     Recent Study Sessions
                   </CardTitle>
-                  <CardDescription>Your latest learning sessions with ZEO-EDU</CardDescription>
+                  <CardDescription>Your latest learning sessions with mento.ai</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
@@ -289,7 +289,7 @@ export default function Dashboard() {
               <Card className="glass border-border/20 text-center">
                 <CardContent className="p-6">
                   <Avatar3D size="md" className="mx-auto mb-4" />
-                  <h3 className="font-semibold mb-2">ZEO-EDU is ready to teach</h3>
+                  <h3 className="font-semibold mb-2">mento.ai is ready to teach</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     Start a new session to continue your learning journey
                   </p>
