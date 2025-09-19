@@ -63,8 +63,8 @@ export default function Navigation() {
     <div className="fixed top-4 left-0 right-0 z-50">
       <nav className={`max-w-4xl mx-auto px-6 py-3 rounded-2xl transition-all duration-300 mx-4 md:mx-auto ${
         isScrolled
-          ? 'bg-gradient-to-br from-mento-primary to-mento-secondary/90 shadow-lg'
-          : 'bg-gradient-to-br from-mento-primary to-mento-secondary'
+          ? 'bg-gradient-to-br from-zeo-primary to-zeo-secondary/90 shadow-lg'
+          : 'bg-gradient-to-br from-zeo-primary to-zeo-secondary'
       }`}>
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -137,7 +137,7 @@ export default function Navigation() {
         <AnimatePresence>
           {isOpen && (
             <motion.div 
-              className="md:hidden mt-4 bg-gradient-to-br from-mento-primary to-mento-secondary/90 rounded-2xl p-4 space-y-2"
+              className="md:hidden mt-4 bg-gradient-to-br from-zeo-primary to-zeo-secondary/90 rounded-2xl p-4 space-y-2"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}

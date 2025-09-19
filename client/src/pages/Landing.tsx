@@ -86,7 +86,7 @@ export default function Landing() {
           <p className="text-muted-foreground">{componentError}</p>
           <button 
             onClick={() => window.location.reload()}
-            className="px-4 py-2 bg-mento-primary text-white rounded-lg hover:bg-mento-primary/90"
+            className="px-4 py-2 bg-zeo-primary text-white rounded-lg hover:bg-zeo-primary/90"
           >
             Refresh Page
           </button>
@@ -122,7 +122,7 @@ export default function Landing() {
           <p className="text-muted-foreground">Unable to load AI companion data.</p>
           <button 
             onClick={() => window.location.reload()}
-            className="px-4 py-2 bg-mento-primary text-white rounded-lg hover:bg-mento-primary/90"
+            className="px-4 py-2 bg-zeo-primary text-white rounded-lg hover:bg-zeo-primary/90"
           >
             Refresh Page
           </button>
@@ -167,14 +167,14 @@ export default function Landing() {
   }
 
   return (
-  <div className="min-h-screen bg-gradient-to-b from-mento-surface to-background overflow-hidden">
+  <div className="min-h-screen bg-gradient-to-b from-zeo-surface to-background overflow-hidden">
       {/* Animated background elements */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
-  <div className="absolute top-1/4 -left-20 w-96 h-96 bg-mento-primary/5 rounded-full blur-3xl" />
-  <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-mento-secondary/5 rounded-full blur-3xl" />
+  <div className="absolute top-1/4 -left-20 w-96 h-96 bg-zeo-primary/5 rounded-full blur-3xl" />
+  <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-zeo-secondary/5 rounded-full blur-3xl" />
         
         <motion.div 
-          className="absolute top-1/2 left-1/2 w-64 h-64 rounded-full bg-mento-primary/5 blur-3xl"
+          className="absolute top-1/2 left-1/2 w-64 h-64 rounded-full bg-zeo-primary/5 blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.5, 0.8, 0.5],
@@ -196,13 +196,13 @@ export default function Landing() {
           variants={staggerContainer}
         >
           <motion.div 
-            className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-mento-primary/10 border border-mento-primary/20 mx-auto"
+            className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-zeo-primary/10 border border-zeo-primary/20 mx-auto"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
           >
-            <Sparkles className="w-4 h-4 text-mento-primary" />
-            <span className="text-sm font-medium text-mento-primary">
+            <Sparkles className="w-4 h-4 text-zeo-primary" />
+            <span className="text-sm font-medium text-zeo-primary">
               AI-Powered Teacher & Doubt Clarifier
             </span>
           </motion.div>
@@ -211,9 +211,9 @@ export default function Landing() {
             className="text-4xl lg:text-6xl font-extrabold leading-tight"
             variants={fadeInUp}
           >
-            Meet <span className="bg-gradient-to-br from-mento-primary to-mento-secondary bg-clip-text text-transparent">mento.ai</span>
+            Meet <span className="bg-gradient-to-br from-zeo-primary to-zeo-secondary bg-clip-text text-transparent">mento.ai</span>
             <br />
-            Your  <span className="bg-gradient-to-br from-mento-primary to-mento-secondary bg-clip-text text-transparent">24/7 AI </span>Teacher
+            Your  <span className="bg-gradient-to-br from-zeo-primary to-zeo-secondary bg-clip-text text-transparent">24/7 AI </span>Teacher
           </motion.h1>
 
          
@@ -272,10 +272,10 @@ export default function Landing() {
                 }}
               />
             ) : (
-              <div className="aspect-video bg-gradient-to-br from-mento-primary/20 to-mento-secondary/20 flex items-center justify-center border border-white/10">
+              <div className="aspect-video bg-gradient-to-br from-zeo-primary/20 to-zeo-secondary/20 flex items-center justify-center border border-white/10">
                 <div className="text-center space-y-2">
-                  <div className="w-16 h-16 mx-auto bg-mento-primary/20 rounded-full flex items-center justify-center">
-                    <MessageSquare className="w-8 h-8 text-mento-primary" />
+                  <div className="w-16 h-16 mx-auto bg-zeo-primary/20 rounded-full flex items-center justify-center">
+                    <MessageSquare className="w-8 h-8 text-zeo-primary" />
                   </div>
                   <span className="text-white/80 font-medium">AI Teacher Ready</span>
                 </div>
@@ -300,14 +300,14 @@ export default function Landing() {
           >
             <Button 
               onClick={handleStartSession}
-              className="bg-mento-primary hover:bg-mento-primary/90 text-white px-8 py-6 text-base font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 group"
+              className="bg-zeo-primary hover:bg-zeo-primary/90 text-white px-8 py-6 text-base font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 group"
             >
               <GraduationCap className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Start Learning
             </Button>
             <Button
               variant="outline"
-              className="border-mento-primary text-mento-primary hover:bg-mento-primary/10 px-8 py-6 text-base font-medium rounded-xl transition-all duration-300 group"
+              className="border-zeo-primary text-zeo-primary hover:bg-zeo-primary/10 px-8 py-6 text-base font-medium rounded-xl transition-all duration-300 group"
             >
               <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Watch Demo
@@ -339,13 +339,13 @@ export default function Landing() {
               return (
                 <motion.div
                   key={feature.title}
-                  className="group p-6 rounded-xl bg-white/5 border border-white/5 hover:border-mento-primary/20 transition-all duration-300 hover:-translate-y-1"
+                  className="group p-6 rounded-xl bg-white/5 border border-white/5 hover:border-zeo-primary/20 transition-all duration-300 hover:-translate-y-1"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
                 >
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-mento-primary to-mento-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-zeo-primary to-zeo-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>

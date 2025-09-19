@@ -62,15 +62,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// mento.ai Custom Colors
-				mento: {
-					primary: 'hsl(var(--mento-primary))',
-					'primary-glow': 'hsl(var(--mento-primary-glow))',
-					secondary: 'hsl(var(--mento-secondary))',
-					'secondary-glow': 'hsl(var(--mento-secondary-glow))',
-					neutral: 'hsl(var(--mento-neutral))',
-					surface: 'hsl(var(--mento-surface))',
-					glass: 'hsl(var(--mento-glass))'
+				// ZEO Custom Colors
+				zeo: {
+					primary: 'hsl(var(--zeo-primary))',
+					'primary-glow': 'hsl(var(--zeo-primary-glow))',
+					secondary: 'hsl(var(--zeo-secondary))',
+					'secondary-glow': 'hsl(var(--zeo-secondary-glow))',
+					neutral: 'hsl(var(--zeo-neutral))',
+					surface: 'hsl(var(--zeo-surface))',
+					glass: 'hsl(var(--zeo-glass))'
 				},
 				emotion: {
 					calm: 'hsl(var(--emotion-calm))',
