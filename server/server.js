@@ -11,11 +11,9 @@ const allowedOrigins = [
   'http://localhost:8080',  // Vite dev server
   'http://127.0.0.1:8080',  // Alternative localhost
   'http://192.168.43.252:8080',  // Local network access
-  // Production origins - update these with your actual Render URLs
- 
-  'https://mento-ai-backend-q75s.onrender.com'
-   // Render frontend URL
-    // Your custom domain
+  // Production frontend origins
+  'https://mento-ai.onrender.com'
+  // Your custom domain(s) can be added here
 ];
 
 app.use(cors({
