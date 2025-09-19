@@ -1,0 +1,13 @@
+# Files and directories to ignore during Render deployment
+node_modules/
+*.log
+.env.local
+.env.development
+.git/
+.gitignore
+README.md
+client/node_modules/
+client/.env.local
+client/dist/
+server/node_modules/
+server/.env.local

@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* ZEO Design System - Futuristic Educational (Blue-based) */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 210 20% 98%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 210 20% 98%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 221 83% 60%;          /* lighter blue */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 188 86% 60%;        /* slightly lighter cyan */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 222 40% 30%;
+
+    --accent: 48 95% 53%;            /* #FACC15 */
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 210 20% 98%;
+    --ring: 221 83% 53%;
+
+    --radius: 1rem;
+
+    /* ZEO Custom Design Tokens */
+    --zeo-primary: 221 83% 55%;        /* Lighter deep blue for surfaces */
+    --zeo-primary-glow: 221 100% 88%;  /* Soft blue glow */
+    --zeo-secondary: 188 86% 55%;      /* Lighter cyan */
+    --zeo-secondary-glow: 188 86% 90%; /* Cyan glow */
+    --zeo-neutral: 220 14% 96%;        /* Subtle neutral */
+    --zeo-surface: 210 20% 98%;        /* Main background */
+    --zeo-glass: 220 13% 91%;          /* Glass morphism base */
+    
+    /* Emotion Colors */
+    --emotion-calm: 221 83% 45%;       /* Blue - calm */
+    --emotion-happy: 48 95% 53%;       /* Yellow - happy */
+    --emotion-anxious: 14 90% 57%;     /* Orange - anxious */
+    --emotion-sad: 221 83% 65%;        /* Lighter blue - sad */
+    --emotion-excited: 188 86% 53%;    /* Cyan - excited */
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(221 83% 60%) 0%, hsl(188 86% 60%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(var(--zeo-glass) / 0.1) 0%, hsl(var(--zeo-glass) / 0.05) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(var(--zeo-primary) / 0.3) 0%, transparent 70%);
+    
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 40px hsl(221 100% 85% / 0.5);
+    --shadow-card: 0 8px 32px hsl(var(--zeo-surface) / 0.8);
+    --shadow-avatar: 0 0 60px hsl(221 100% 85% / 0.6);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 220 14% 96%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 48 95% 53%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 221 83% 53%;
+  }
+
+  .light {
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 210 20% 98%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 210 20% 98%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 188 86% 53%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 222 40% 30%;
+
+    --accent: 48 95% 53%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 210 20% 98%;
+    --ring: 221 83% 53%;
+
+    /* ZEO Light Mode Tokens */
+    --zeo-primary: 221 83% 45%;
+    --zeo-primary-glow: 221 100% 88%;
+    --zeo-secondary: 188 86% 45%;
+    --zeo-secondary-glow: 188 86% 90%;
+    --zeo-neutral: 220 14% 96%;
+    --zeo-surface: 210 20% 98%;
+    --zeo-glass: 220 13% 91%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(188 86% 53%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(var(--zeo-glass) / 0.8) 0%, hsl(var(--zeo-glass) / 0.4) 100%);
+    --shadow-glow: 0 0 40px hsl(221 100% 85% / 0.4);
+    --shadow-card: 0 8px 32px hsl(222 47% 11% / 0.1);
+    --shadow-avatar: 0 0 60px hsl(221 100% 85% / 0.5);
+
+    --sidebar-background: 220 14% 96%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 48 95% 53%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 221 83% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: hsl(var(--background));
+    background-image: 
+      radial-gradient(ellipse at 20% 80%, hsl(var(--zeo-primary) / 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, hsl(var(--zeo-secondary) / 0.1) 0%, transparent 50%);
+  }
+
+  /* Glass morphism utility classes */
+  .glass {
+    background: hsl(var(--zeo-glass) / 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.2);
+  }
+
+  .glass-strong {
+    background: hsl(var(--zeo-glass) / 0.2);
+    backdrop-filter: blur(40px);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  /* Glow effects */
+  .glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-soft {
+    box-shadow: 0 0 20px hsl(var(--zeo-primary) / 0.2);
+  }
+
+  /* Avatar breathing animation */
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+  }
+
+  .breathe {
+    animation: breathe 4s ease-in-out infinite;
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(188 86% 53%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--zeo-surface));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--zeo-primary) / 0.3);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--zeo-primary) / 0.5);
+  }
+}

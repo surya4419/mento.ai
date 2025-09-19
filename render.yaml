@@ -1,0 +1,49 @@
+# Render deployment configuration for ZEO AI
+services:
+  # Backend service
+  - type: web
+    name: zeo-backend
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: TAVUS_API_KEY
+        sync: false  # Set in Render dashboard
+      - key: TAVUS_API_URL
+        value: https://tavusapi.com/v2
+      - key: TAVUS_REPLICA_ID
+        sync: false  # Set in Render dashboard
+      - key: TAVUS_DEFAULT_PERSONA_ID
+        sync: false  # Optional, set in Render dashboard
+
+  # Frontend service
+  - type: web
+    name: zeo-frontend
+    env: static
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: ./client/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: zeo-backend
+          property: host
+          suffix: /api
+      - key: VITE_TAVUS_API_KEY
+        sync: false  # Set in Render dashboard
+      - key: VITE_TAVUS_API_URL
+        value: https://tavusapi.com/v2
+      - key: VITE_TAVUS_REPLICA_ID
+        sync: false  # Set in Render dashboard
+      - key: VITE_TAVUS_DEFAULT_PERSONA_ID
+        sync: false  # Optional, set in Render dashboard
+      - key: VITE_ENABLE_TAVUS
+        value: true
+      - key: VITE_ENABLE_AUTH
+        value: false
+      - key: VITE_DEV_MODE
+        value: false

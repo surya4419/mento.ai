@@ -1,0 +1,14 @@
+# Redirect and Rewrite Rules for ZEO AI SPA
+# This file handles client-side routing for React Router
+
+# Redirect all routes to index.html for client-side routing
+/*    /index.html   200
+
+# Optional: Redirect old URLs if you have any
+# /old-page    /new-page    301
+
+# Optional: Force HTTPS (uncomment if needed)
+# /*    https://%{HTTP_HOST}%{REQUEST_URI}    301
+
+# Optional: Handle API routes (if your API is on the same domain)
+# /api/*    https://your-backend-service.onrender.com/api/:splat    200
