@@ -70,7 +70,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img 
-              src="/logo.png" 
+              src="/mento.png" 
               alt="mento.ai Logo" 
               className="h-8 w-auto"
             />

@@ -300,7 +300,7 @@ export default function Landing() {
           >
             <Button 
               onClick={handleStartSession}
-              className="bg-zeo-primary hover:bg-zeo-primary/90 text-white px-8 py-6 text-base font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 group"
+              className="bg-gradient-hero hover:opacity-90 text-white px-8 py-6 text-base font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 group"
             >
               <GraduationCap className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Start Learning

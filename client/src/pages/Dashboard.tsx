@@ -288,7 +288,9 @@ export default function Dashboard() {
             >
               <Card className="glass border-border/20 text-center">
                 <CardContent className="p-6">
-                  <Avatar3D size="md" className="mx-auto mb-4" />
+                  <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img src="/profile.png" alt="Profile" className="w-full h-full object-cover" />
+                  </div>
                   <h3 className="font-semibold mb-2">mento.ai is ready to teach</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     Start a new session to continue your learning journey
